@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-
+import CourseSection from "./componentasJSX/CourseSection"
+import Footer from "./componentasJSX/Footer"
+import Header from "./componentasJSX/Header"
+import Slider from "./componentasJSX/Slider"
+import "./style.css"
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Slider />
+            <CourseSection />
+            <Footer />
+        </div>
+    )
 }
 
-export default App;
+export default App
